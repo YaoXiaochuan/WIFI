@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		92366B73226B259F001A2071 /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 92366B6F226B259E001A2071 /* GCDAsyncSocket.m */; };
+		92366B74226B259F001A2071 /* GCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 92366B70226B259F001A2071 /* GCDAsyncUdpSocket.m */; };
+		92366B77226B3C45001A2071 /* TCPCommunicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 92366B76226B3C45001A2071 /* TCPCommunicator.m */; };
+		92366B7A226B49F3001A2071 /* Protocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 92366B79226B49F3001A2071 /* Protocol.m */; };
+		92366B7D226B4FFA001A2071 /* NSMutableData+TCP.m in Sources */ = {isa = PBXBuildFile; fileRef = 92366B7C226B4FFA001A2071 /* NSMutableData+TCP.m */; };
 		927CBBBF226B183B005A6BF7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 927CBBBE226B183B005A6BF7 /* AppDelegate.m */; };
 		927CBBC2226B183B005A6BF7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 927CBBC1226B183B005A6BF7 /* ViewController.m */; };
 		927CBBC5226B183B005A6BF7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 927CBBC3226B183B005A6BF7 /* Main.storyboard */; };
@@ -35,6 +40,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		92366B6F226B259E001A2071 /* GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncSocket.m; sourceTree = "<group>"; };
+		92366B70226B259F001A2071 /* GCDAsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncUdpSocket.m; sourceTree = "<group>"; };
+		92366B71226B259F001A2071 /* GCDAsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncUdpSocket.h; sourceTree = "<group>"; };
+		92366B72226B259F001A2071 /* GCDAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncSocket.h; sourceTree = "<group>"; };
+		92366B75226B3C45001A2071 /* TCPCommunicator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCPCommunicator.h; sourceTree = "<group>"; };
+		92366B76226B3C45001A2071 /* TCPCommunicator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCPCommunicator.m; sourceTree = "<group>"; };
+		92366B78226B49F3001A2071 /* Protocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Protocol.h; sourceTree = "<group>"; };
+		92366B79226B49F3001A2071 /* Protocol.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Protocol.m; sourceTree = "<group>"; };
+		92366B7B226B4FFA001A2071 /* NSMutableData+TCP.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSMutableData+TCP.h"; sourceTree = "<group>"; };
+		92366B7C226B4FFA001A2071 /* NSMutableData+TCP.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSMutableData+TCP.m"; sourceTree = "<group>"; };
 		927CBBBA226B183B005A6BF7 /* WiFi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WiFi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		927CBBBD226B183B005A6BF7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		927CBBBE226B183B005A6BF7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -78,6 +93,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		92366B6D226B2482001A2071 /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+				92366B6E226B258D001A2071 /* CocoaAsyncSocket */,
+			);
+			path = Libs;
+			sourceTree = "<group>";
+		};
+		92366B6E226B258D001A2071 /* CocoaAsyncSocket */ = {
+			isa = PBXGroup;
+			children = (
+				92366B72226B259F001A2071 /* GCDAsyncSocket.h */,
+				92366B6F226B259E001A2071 /* GCDAsyncSocket.m */,
+				92366B71226B259F001A2071 /* GCDAsyncUdpSocket.h */,
+				92366B70226B259F001A2071 /* GCDAsyncUdpSocket.m */,
+			);
+			path = CocoaAsyncSocket;
+			sourceTree = "<group>";
+		};
 		927CBBB1226B183B005A6BF7 = {
 			isa = PBXGroup;
 			children = (
@@ -101,10 +135,17 @@
 		927CBBBC226B183B005A6BF7 /* WiFi */ = {
 			isa = PBXGroup;
 			children = (
+				92366B6D226B2482001A2071 /* Libs */,
 				927CBBBD226B183B005A6BF7 /* AppDelegate.h */,
 				927CBBBE226B183B005A6BF7 /* AppDelegate.m */,
 				927CBBC0226B183B005A6BF7 /* ViewController.h */,
 				927CBBC1226B183B005A6BF7 /* ViewController.m */,
+				92366B75226B3C45001A2071 /* TCPCommunicator.h */,
+				92366B76226B3C45001A2071 /* TCPCommunicator.m */,
+				92366B78226B49F3001A2071 /* Protocol.h */,
+				92366B79226B49F3001A2071 /* Protocol.m */,
+				92366B7B226B4FFA001A2071 /* NSMutableData+TCP.h */,
+				92366B7C226B4FFA001A2071 /* NSMutableData+TCP.m */,
 				927CBBC3226B183B005A6BF7 /* Main.storyboard */,
 				927CBBC6226B183C005A6BF7 /* Assets.xcassets */,
 				927CBBC8226B183C005A6BF7 /* LaunchScreen.storyboard */,
@@ -262,7 +303,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92366B73226B259F001A2071 /* GCDAsyncSocket.m in Sources */,
+				92366B74226B259F001A2071 /* GCDAsyncUdpSocket.m in Sources */,
+				92366B77226B3C45001A2071 /* TCPCommunicator.m in Sources */,
 				927CBBC2226B183B005A6BF7 /* ViewController.m in Sources */,
+				92366B7A226B49F3001A2071 /* Protocol.m in Sources */,
+				92366B7D226B4FFA001A2071 /* NSMutableData+TCP.m in Sources */,
 				927CBBCD226B183C005A6BF7 /* main.m in Sources */,
 				927CBBBF226B183B005A6BF7 /* AppDelegate.m in Sources */,
 			);
