@@ -16,7 +16,7 @@
 @property(nonatomic, strong) GCDAsyncSocket* socket;
 @property(nonatomic, strong) NSString *host;
 @property(nonatomic, assign) NSUInteger port;
-@property(nonatomic, strong) NSMutableDictionary<NSData*> *sendCommands;
+@property(nonatomic, strong) NSMutableDictionary *sendCommands;
 @property(nonatomic, strong) NSMutableData* receiveData;
 
 @end
